@@ -9,7 +9,7 @@ import PrimaryButton from "../uiComponents/buttons/PrimaryButton";
 import styles from "../uiComponents/styles";
 import Strings from "../appConstants/strings";
 import apiCall from "../network/ApiClient";
-import RandomStringGenerator from "../network/tokenGenerator";
+import RandomStringGenerator from "../network/RandomStringGenerator";
 import KeyStore from "../data/local/KeyStore";
 import Route from "../navigation/routes";
 

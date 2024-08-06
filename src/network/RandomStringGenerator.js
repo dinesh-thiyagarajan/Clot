@@ -1,4 +1,4 @@
-const GenerateRandomToken = (length = 140) => {
+const RandomStringGenerator = (length = 140) => {
     let token = "";
     const characters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -11,4 +11,4 @@ const GenerateRandomToken = (length = 140) => {
     return token;
 };
 
-export default GenerateRandomToken;
+export default RandomStringGenerator;
