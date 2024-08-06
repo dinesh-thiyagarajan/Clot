@@ -1,11 +1,11 @@
-import SplashScreen from "../presentations/screens/SplashScreen";
-import SignInScreen from "../presentations/screens/auth/SignInScreen";
+import SplashScreen from "../screens/SplashScreen";
+import SignInScreen from "../screens/SignInScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import CreateAccountScreen from "../presentations/screens/auth/CreateAccountScreen";
-import Route from "../resources/routes";
+import RegisterScreen from "../screens/RegisterScreen";
+import Route from "./routes";
 import TabNavigation from "./TabNavigation";
-import ViewCategoryScreen from "../presentations/screens/category/ViewCategoryScreen";
+import ViewCategoryScreen from "../screens/ViewCategoryScreen";
 const Stack = createStackNavigator();
 
 const RootNavigation = () => {
@@ -24,7 +24,7 @@ const RootNavigation = () => {
         />
         <Stack.Screen
           name={Route.CREATE_ACCOUNT_SCREEN}
-          component={CreateAccountScreen}
+          component={RegisterScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen
